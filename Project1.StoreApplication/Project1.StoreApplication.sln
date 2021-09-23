@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project1.StoreApplication.Storage", "Project1.StoreApplication.Storage\Project1.StoreApplication.Storage.csproj", "{409B9B3C-12B7-490E-BCBD-3E1CF4D87319}"
+	ProjectSection(ProjectDependencies) = postProject
+		{155C5A5C-56CF-4C4F-8260-081F83888BA7} = {155C5A5C-56CF-4C4F-8260-081F83888BA7}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project1.StoreApplication.Business", "Project1.StoreApplication.Business\Project1.StoreApplication.Business.csproj", "{26893D66-42B0-46E8-89ED-5B7E65D2E047}"
+	ProjectSection(ProjectDependencies) = postProject
+		{409B9B3C-12B7-490E-BCBD-3E1CF4D87319} = {409B9B3C-12B7-490E-BCBD-3E1CF4D87319}
+		{155C5A5C-56CF-4C4F-8260-081F83888BA7} = {155C5A5C-56CF-4C4F-8260-081F83888BA7}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project1.StoreApplication.Models", "Project1.StoreApplication.Models\Project1.StoreApplication.Models.csproj", "{155C5A5C-56CF-4C4F-8260-081F83888BA7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project1.StoreApplication.Test", "Project1.StoreApplication.Test\Project1.StoreApplication.Test.csproj", "{CED73AFF-2DCA-480B-82BE-0E5858270728}"
+	ProjectSection(ProjectDependencies) = postProject
+		{409B9B3C-12B7-490E-BCBD-3E1CF4D87319} = {409B9B3C-12B7-490E-BCBD-3E1CF4D87319}
+		{155C5A5C-56CF-4C4F-8260-081F83888BA7} = {155C5A5C-56CF-4C4F-8260-081F83888BA7}
+		{26893D66-42B0-46E8-89ED-5B7E65D2E047} = {26893D66-42B0-46E8-89ED-5B7E65D2E047}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project1.StoreApplication.WebApi", "Project1.StoreApplication.WebApi\Project1.StoreApplication.WebApi.csproj", "{0EBF5FFC-1A98-4669-BB3D-75E19BB49BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{409B9B3C-12B7-490E-BCBD-3E1CF4D87319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409B9B3C-12B7-490E-BCBD-3E1CF4D87319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409B9B3C-12B7-490E-BCBD-3E1CF4D87319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409B9B3C-12B7-490E-BCBD-3E1CF4D87319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26893D66-42B0-46E8-89ED-5B7E65D2E047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26893D66-42B0-46E8-89ED-5B7E65D2E047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26893D66-42B0-46E8-89ED-5B7E65D2E047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26893D66-42B0-46E8-89ED-5B7E65D2E047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155C5A5C-56CF-4C4F-8260-081F83888BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155C5A5C-56CF-4C4F-8260-081F83888BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155C5A5C-56CF-4C4F-8260-081F83888BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155C5A5C-56CF-4C4F-8260-081F83888BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED73AFF-2DCA-480B-82BE-0E5858270728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED73AFF-2DCA-480B-82BE-0E5858270728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED73AFF-2DCA-480B-82BE-0E5858270728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED73AFF-2DCA-480B-82BE-0E5858270728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EBF5FFC-1A98-4669-BB3D-75E19BB49BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EBF5FFC-1A98-4669-BB3D-75E19BB49BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EBF5FFC-1A98-4669-BB3D-75E19BB49BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EBF5FFC-1A98-4669-BB3D-75E19BB49BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {112184C7-6A82-4B50-84F7-04B27835CDE1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Add Product</title>
+    <link href="/css/basicStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="hero-content">
+    </div>
+    <header class="sticky-header">
+        <nav class="nav">
+            <a href="/html/home.html">Home</a>
+            <a href="/html/customers.html">Customers</a>
+            <a href="/html/stores.html">Stores</a>
+            <a class="nav-current-page" href="/html/products.html">Products</a>
+            <a href="/html/orders.html">Orders</a>
+        </nav>
+    </header>
+    <div class="page-content">
+        <form action="/api/Products/add" method="POST" class="add-product-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Product Info</h3>
+                    </div>
+                </div>
+                <div class="row margin-md">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-2">
+                        <label for="product-name-input"> Name*: </label>
+                    </div>
+                    <div class="col-md-2">
+                        <input id="product-name-input" type="text" name="name" placeholder="Enter product name" required />
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row margin-md">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-2">
+                        <label for="product-price-input"> Price*: </label>
+                    </div>
+                    <div class="col-md-2">
+                        <input id="product-price-input" type="text" name="price" placeholder="Enter product price" required />
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row margin-md">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-2">
+                        <label for="product-description-input"> Description: </label>
+                    </div>
+                    <div class="col-md-2">
+                        <input id="product-description-input" type="text" name="description" placeholder="Enter product description" />
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row margin-md">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-2">
+                        <label for="product-category-selector"> Category: </label>
+                    </div>
+                    <div class="col-md-2">
+                        <select id="product-category-selector" name="categoryID">
+                            <option value="">Category 1</option>
+                            <option value="">Category 2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row margin-md">
+                    <input type="submit" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="sticky-footer">
+        <div class="footer-content">
+            <p class="footer-text footer-left">Created by Jonathan Bukowsky</p>
+            <p class="footer-text footer-right">Jonathan Bukowsky is the best</p>
+        </div>
+    </footer>
+    <script src="/js/guards/LoginGuard.js"></script>
+    <script src="/js/AddProduct.js"></script>
+</body>
+</html>

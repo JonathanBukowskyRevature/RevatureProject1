@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Orders</title>
+
+    <link href="/css/basicStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="hero-content">
+    </div>
+    <header class="sticky-header">
+        <nav class="nav">
+            <a href="/html/home.html">Home</a>
+            <a href="/html/customers.html">Customers</a>
+            <a href="/html/stores.html">Stores</a>
+            <a href="/html/products.html">Products</a>
+            <a class="nav-current-page" href="/html/orders.html">Orders</a>
+        </nav>
+    </header>
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="status margin-md"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Order History:</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col margin-bottom-lg">
+                    <select name="history_type" class="history-selector">
+                        <option value=""></option>
+                        <option value="Store">Store order history</option>
+                        <option value="Customer">Customer order history</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container order-list">
+                </div>
+            </div>
+        </div>
+        <div class="container hidden">
+            <div class="row template-order">
+                <div class="container order-body">
+                    <div class="row">
+                        <div class="col order-header">
+                            <h4 class="center-text larger-text">Order</h4>
+                        </div>
+                    </div>
+                    <div class="row center-text">
+                        <div class="col-md-6">
+                            <p class="template-order-customer">Customer:
+                                <span class="template-order-customer-firstName">Johnny</span>
+                                <span class="template-order-customer-lastName">Bravo</span>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="template-order-store">Store:
+                                <span class="template-order-store-name">Jet's Pizza (Ann arbor)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10">
+                            <div class="container">
+                                <div class="row larger-text">
+                                    <div class="col-md-3">
+                                        <p>Product</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>Price</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>Quantity</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>Subtotal</p>
+                                    </div>
+                                </div>
+                                <div class="row template-order-products">
+                                    <div class="col-md-3">
+                                        <p class="template-order-products-name">Large Pepperoni Pizza</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="template-order-products-price">15.99</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="template-order-products-quantity">4</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="template-order-products-subtotal">63.96</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="">Total:
+                                                    <span class="template-order-total">95.92999999999999</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="sticky-footer">
+        <div class="footer-content">
+            <p class="footer-text footer-left">Created by Jonathan Bukowsky</p>
+            <p class="footer-text footer-right">Jonathan Bukowsky is the best</p>
+        </div>
+    </footer>
+    <script src="/js/guards/LoginGuard.js"></script>
+    <script src="/js/guards/SelectStoreGuard.js"></script>
+    <script src="/js/model/ModelObject.js"></script>
+    <script src="/js/orders.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project1.StoreApplication.Business\Project1.StoreApplication.Business.csproj" />
+    <ProjectReference Include="..\Project1.StoreApplication.Models\Project1.StoreApplication.Models.csproj" />
+  </ItemGroup>
+
+</Project>

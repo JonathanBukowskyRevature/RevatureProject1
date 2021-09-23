@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Products</title>
+    <link href="/css/basicStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="hero-content">
+    </div>
+    <header class="sticky-header">
+        <nav class="nav">
+            <a href="/html/home.html">Home</a>
+            <a href="/html/customers.html">Customers</a>
+            <a href="/html/stores.html">Stores</a>
+            <a class="nav-current-page" href="/html/products.html">Products</a>
+            <a href="/html/orders.html">Orders</a>
+        </nav>
+    </header>
+    <div class="page-content">
+        <div class="container product-list">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h1 class="store-header">Products</h1>
+                </div>
+                <div class="col-md-4">
+                    <button class="margin-md add-product-button btn">Add Product</button>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-md-10">
+                </div>
+                <div class="col-md-2">
+                    <button onclick="LoadProducts(document.querySelector('.product-list'))">Refresh</button>
+                </div>
+            </div>
+            -->
+            <div class="row strong-text">
+                <div class="col-md-3">
+                    <p>Name</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Description</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Price</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Quantity</p>
+                </div>
+            </div>
+        </div>
+        <div class="container hidden">
+            <div class="row template-product">
+                <div class="col-md-3">
+                    <p class="template-product-name">Name</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="template-product-description">Description</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="template-product-formattedPrice">Price</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="template-product-quantity">Quantity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="sticky-footer">
+        <div class="footer-content">
+        <p class="footer-text footer-left">Created by Jonathan Bukowsky</p>
+        <p class="footer-text footer-right">Jonathan Bukowsky is the best</p>
+        </div>
+    </footer>
+    <script src="/js/guards/LoginGuard.js"></script>
+    <script src="/js/model/ModelObject.js"></script>
+    <script src="/js/products.js"></script>
+</body>
+</html>

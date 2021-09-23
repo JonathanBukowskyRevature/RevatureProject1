@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Stores</title>
+    <link href="/css/basicStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="hero-content">
+    </div>
+    <header class="sticky-header">
+        <nav class="nav">
+            <a href="/html/home.html">Home</a>
+            <a href="/html/customers.html">Customers</a>
+            <a class="nav-current-page" href="/html/stores.html">Stores</a>
+            <a href="/html/products.html">Products</a>
+            <a href="/html/orders.html">Orders</a>
+        </nav>
+    </header>
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h1>Select a store</h1>
+            </div>
+            <div class="col-md-4 margin-md">
+                <button class="add-store-btn btn">Add Store</button>
+            </div>
+        </div>
+        <div id="storeList" class="container">
+        </div>
+        <div class="container hidden">
+            <div class="template-store row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="template-store-name">Name</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="template-store-button">Button</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="sticky-footer">
+        <div class="footer-content">
+        <p class="footer-text footer-left">Created by Jonathan Bukowsky</p>
+        <p class="footer-text footer-right">Jonathan Bukowsky is the best</p>
+        </div>
+    </footer>
+    <script src="/js/guards/LoginGuard.js"></script>
+    <script src="/js/stores.js"></script>
+</body>
+</html>

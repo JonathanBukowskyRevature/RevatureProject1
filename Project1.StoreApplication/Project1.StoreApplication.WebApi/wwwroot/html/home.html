@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="/css/basicStyle.css" rel="stylesheet" />
+    <title>Home</title>
+</head>
+<body>
+    <div class="hero-content">
+    </div>
+    <header class="sticky-header">
+        <nav class="nav">
+            <a class="nav-current-page" href="/html/home.html">Home</a>
+            <a href="/html/customers.html">Customers</a>
+            <a href="/html/stores.html">Stores</a>
+            <a href="/html/products.html">Products</a>
+            <a href="/html/orders.html">Orders</a>
+        </nav>
+    </header>
+    <div class="page-content">
+        <div class="status"></div>
+        <h1>What do you want to do?</h1>
+        <button onclick="ViewInventory()">Manage Inventory</button>
+        <button onclick="EditCart()">Edit Cart</button>
+        <button onclick="ViewOrderHistory()">View Orders</button>
+        <button onclick="ChangeStore()">Choose Different Store</button>
+        <button onclick="Logout()">Logout</button>
+
+        <div class="home-content">
+
+        </div>
+    </div>
+    <footer class="sticky-footer">
+        <div class="footer-content">
+            <p class="footer-text footer-left">Created by Jonathan Bukowsky</p>
+            <p class="footer-text footer-right">Jonathan Bukowsky is the best</p>
+        </div>
+    </footer>
+    <script src="/js/guards/LoginGuard.js"></script>
+    <script src="/js/guards/SelectStoreGuard.js"></script>
+    <script src="/js/home/home.js"></script>
+    <script src="/js/home/ManageCart.js"></script>
+    <script src="/js/home/ManageInventory.js"></script>
+</body>
+</html>
